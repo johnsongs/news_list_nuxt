@@ -6,7 +6,7 @@
           <v-col v-for="(item, index) in props.items" :key="index" cols="12" sm="6" md="4" lg="3"
             @click="clickNewsItem(item)">
             <v-card>
-              <v-img lazy-src="https://picsum.photos/id/11/10/6" height="250" :src="item.imageUrl"></v-img>
+              <v-img height="250" :src="item.imageUrl"></v-img>
               <v-card-title class="subheading font-weight-bold">
                 {{ item.title }}
               </v-card-title>
